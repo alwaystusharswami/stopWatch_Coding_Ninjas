@@ -8,15 +8,13 @@ let seconds = document.querySelector("#sec");
 let isPaused = false;
 
 // !current time and date
-window.setInterval(function(){
+window.setInterval(function () {
   let myDate = new Date();
-let date = document.querySelector("#date");
-date.innerHTML = myDate.toLocaleString();
-},100);
+  let date = document.querySelector("#date");
+  date.innerHTML = myDate.toLocaleString();
+}, 100);
 
-
-
-// variable for time changing event 
+// variable for time changing event
 let min = 0;
 let sec = 0;
 let hour = 0;
