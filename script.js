@@ -55,8 +55,12 @@ let  interval = window.setInterval(function () {
 
 start.addEventListener("click", function (e) {
   // ! using set interval function
-  e.preventDefault();
+  // e.preventDefault();
+  console.log(isPaused)
+console.log(typeof sec);
   isPaused=true;
+  console.log(isPaused)
+  console.log(`start`)
 
  
 });
@@ -72,8 +76,12 @@ pause.addEventListener('click',function(){
 })
 
 reset.addEventListener("click", function () {
-    clearInterval(interval);
     seconds.innerHTML='00';
     minute.innerHTML='00';
     hours.innerHTML='00';
+    isPaused=false;
+    sec=0;
+    min=0;
+    hour=0;
+
 });
